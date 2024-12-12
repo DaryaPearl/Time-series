@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["dependencies"]
+requires-python = ">= 3.8"
+name = "tsagro"
+version = "2024.12.12"
+authors = [
+  {name = "Darya Zhemchueva", email = "Darya.Zhemchueva@skoltech.ru"},
+  {name = "Juan Pablo Rojas Bustos", email = "j.bustos@skoltech.ru"},
+]
+
+maintainers = [
+  {name = "Darya Zhemchueva", email = "Darya.Zhemchueva@skoltech.ru"},
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
